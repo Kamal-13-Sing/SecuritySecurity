@@ -14,7 +14,7 @@ public class HomeController {
 	@GetMapping("/admin")
 	public String special() {
 		
-		return "Special User for admin";
+		return "Special User for admin only ";
 	}
 
 	@PreAuthorize("hasRole('ADMIN') or hasRole('CUSTOMER')")
